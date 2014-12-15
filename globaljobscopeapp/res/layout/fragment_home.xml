@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeRTL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_background">
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+		android:background="@drawable/searchbtnstyle"
+        android:text="search" />
+
+    <EditText
+        android:id="@+id/edtEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+		android:hint="job title or keyword"
+        android:color="#66000000"/>
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:text="Get Hired Oversea,"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle1"
+        android:layout_centerHorizontal="true"
+        android:text="Enrich Your Life"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

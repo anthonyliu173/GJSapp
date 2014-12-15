@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/RTL_btnSave"
+   android:layout_height="wrap_content" 
+   android:layout_width="wrap_content"
+   >
+   
+    <TextView
+      android:id="@+id/test_button_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+	  android:layout_alignParentRight="true"
+      android:layout_marginLeft="10dp"
+      android:textColor="#000000"
+      android:text="Save"/>
+    <ImageView
+      android:id="@+id/savejob_btn_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/test_button_text2"
+      android:src="@drawable/save"
+      android:layout_alignParentTop="true"/>
+    
+   
+</RelativeLayout>

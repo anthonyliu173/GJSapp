@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/data_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTopScpaing"
+        android:layout_marginTop="5dp"
+        android:maxWidth="240dip"
+        android:paddingLeft="10dip"
+        android:text="title"
+        android:textColor="#2D75C7"
+        android:textSize="16dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/data_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/data_title"
+        android:paddingLeft="10dip"
+        android:text="company"
+        android:textColor="#000000" 
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/data_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/data_company"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:paddingLeft="20dip"
+        android:text="detail" 
+        android:textColor="#848484" />
+
+    <TextView
+        android:id="@+id/data_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTopScpaing"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:text="salary"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/data_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/data_salary"
+        android:text="location" 
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/data_detail"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgbtnSave"
+            android:layout_toRightOf="@+id/imgbtnSave"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip"
+            android:text="Save"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+	        android:id="@+id/data_ID"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_toRightOf="@+id/txtSave"
+	        android:text="" 
+	        android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

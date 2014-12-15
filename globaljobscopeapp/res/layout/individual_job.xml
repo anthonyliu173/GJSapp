@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#F8F8F8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+				
+                <LinearLayout
+	                android:layout_width="0dip"
+	                android:layout_height="wrap_content" 
+	                android:layout_weight="0.5"
+	                android:orientation="vertical">
+	                
+                    <TextView
+	                    android:id="@+id/txtTitleInd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+				        android:textColor="#2D75C7"
+				        android:textSize="16dip"
+				        android:textStyle="bold"
+	                    android:text="CEO" />
+                    <TextView
+	                    android:id="@+id/txtCompanyInd"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#000000" 
+        				android:textStyle="bold|italic"
+	                    android:text="Alpha Camp" />
+
+            	</LinearLayout>
+
+            	<RelativeLayout
+            	    android:layout_width="0dip"
+            	    android:layout_height="wrap_content"
+            	    android:layout_weight="0.5"
+            	    android:orientation="vertical" >
+
+            	    <TextView
+            	        android:id="@+id/txtSalaryInd"
+            	        android:layout_width="wrap_content"
+            	        android:layout_height="wrap_content"
+            	        android:layout_alignParentRight="true"
+            	        android:layout_alignParentTop="true"
+            	        android:text="2000usd/year"
+            	        android:textColor="#000000"
+            	        android:textStyle="bold" />
+
+            	    <TextView
+            	        android:id="@+id/txtLocationInd"
+            	        android:layout_width="wrap_content"
+            	        android:layout_height="wrap_content"
+            	        android:layout_below="@+id/txtSalaryInd"
+            	        android:layout_alignParentRight="true"
+            	        android:text="Taipei"
+            	        android:textColor="#000000"
+            	        android:textStyle="bold" />
+
+            	   <!-- <include
+            	        android:id="@+id/btnSave"
+            	        android:layout_width="82dp"
+            	        android:layout_height="30dp"
+            	        android:layout_alignParentRight="true"
+            	        android:layout_below="@+id/txtLocationInd"
+            	        layout="@drawable/savejobbtnstyle" /> -->
+            	        
+					<LinearLayout
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_alignParentRight="true"
+					    android:layout_below="@+id/txtLocationInd"
+					    android:layout_marginTop="5dp"
+					    android:onClick="save_unsave" >
+
+						<ImageView
+						    android:id="@+id/imgSave"
+						    android:layout_width="30dp"
+						    android:layout_height="30dp"
+						    android:layout_marginRight="5dp"
+						    android:src="@drawable/save" />
+
+	            	    <TextView
+	            	        android:id="@+id/txtSave"
+	            	        android:layout_width="wrap_content"
+	            	        android:layout_height="wrap_content"
+	            	        android:layout_alignParentRight="true"
+	            	        android:layout_below="@+id/txtLocationInd"
+	            	        android:layout_gravity="center_vertical"
+	            	        android:text="Save"
+	            	        android:textColor="#000000"
+	            	        android:textStyle="bold" />
+
+					</LinearLayout>
+            	    
+            	</RelativeLayout>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtDetailInd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" looking for good CEO looking for good CEOlooking for good CEOlooking for good CEO"
+                    android:textColor="#848484" />
+            </ScrollView>
+
+       </LinearLayout>
+
+   
+</RelativeLayout>
